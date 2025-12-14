@@ -1,3 +1,7 @@
+# dry-run
+pip install fastapi --dry-run --report report.json
+
+
 # test@!
 🏆 최종 추천
 🔥 정밀한 표 크롤링/파싱이 목적이라면:
