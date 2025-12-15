@@ -1,7 +1,33 @@
 # dry-run
 pip install fastapi --dry-run --report report.json
 
+pip download fastapi uvicorn --platform win_amd64 --python-version 311 --only-binary :all: --dest ./
 
+#Memurai + RQ
+장단점 정리 (Memurai + RQ)
+✅ 장점
+
+Windows에서 완전 안정적
+
+설정 간단
+
+Celery보다 훨씬 덜 스트레스
+
+FastAPI와 궁합 좋음
+
+❌ 단점
+
+복잡한 워크플로우 (체인, 그룹, ETA 등)는 약함
+
+대규모 분산 시스템에는 한계
+
+개인적인 추천 (정리)
+
+Windows + FastAPI + 백그라운드 작업
+👉 ⭐ Memurai + RQ 아주 좋은 선택
+
+나중에 Linux로 가도
+👉 Redis로 그냥 갈아타면 끝
 # test@!
 🏆 최종 추천
 🔥 정밀한 표 크롤링/파싱이 목적이라면:
